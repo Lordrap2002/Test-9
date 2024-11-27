@@ -25,6 +25,7 @@ def algoritmoElevador(arregloPisos, pisoActual, mapaPisos, sentido):
                     heappop(altos)
             else:
                 sentido = 0
+                continue
         else:
             if(len(bajos)):
                 print("Elevador descendiendo")
@@ -35,6 +36,7 @@ def algoritmoElevador(arregloPisos, pisoActual, mapaPisos, sentido):
                     heappop(bajos)
             else:
                 sentido = 1
+                continue
         print("Elevador se detiene")
         if(pisoActual in mapaPisos):
             pisoNuevo = mapaPisos[pisoActual]
