@@ -49,10 +49,10 @@ def main():
     
     Configura los parámetros iniciales del elevador y llama a la función algoritmoElevador.
     """
-    arregloPisos = [5, 29, 13, 10]               # Lista de pisos a visitar
-    pisoInicial = 4                              # Piso en el que se encuentra el elevador al inicio
-    mapaPisos = {5 : 2, 29 : 10, 13 : 1, 10 :1}  # Mapa de pisos con nuevos destinos
-    sentido = 1                                  # Dirección del elevador (1: subiendo, 0: descendiendo)
+    arregloPisos = [5, 29, 13, 10]                          # Lista de pisos a visitar
+    pisoInicial = 4                                         # Piso en el que se encuentra el elevador al inicio
+    mapaPisos = {5 : 2, 29 : 10, 13 : 1, 10 :1}             # Mapa de pisos con nuevos destinos
+    sentido = (1 if pisoInicial < arregloPisos[0] else 0)   # Dirección del elevador (1: subiendo, 0: descendiendo)
     algoritmoElevador(arregloPisos, pisoInicial, mapaPisos, sentido)
 
 if __name__ == "__main__":
