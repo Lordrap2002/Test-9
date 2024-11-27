@@ -1,13 +1,22 @@
 def buscarPalabras(matriz, palabras):
+    """
+    Busca palabras en una matriz de letras y las imprime con sus posiciones.
+    
+    :param matriz: Matriz de letras como un arreglo de strings, cada string representa una fila.
+    :param palabras: Arreglo de strings, cada string es una palabra a buscar.
+    """
     matriz1 = []
     respuestas = []
     posiciones = []
+    # Convertir la matriz de strings a una matriz de listas de letras
     for fila in matriz:
         matriz1.append(fila.split())
+    # Iterar sobre cada palabra a buscar
     for palabra in palabras:
         ind = 0
         respuestas = []
         print("Searching \"%s\"" % (palabra))
+        # Iterar sobre la matriz para buscar la palabra
         for fila in range(len(matriz1)):
             for i in range(2):
                 ind = 0
@@ -46,6 +55,11 @@ def buscarPalabras(matriz, palabras):
             print("\"%s\" Not found" % (palabra))
 
 def main():
+    """
+    Ejecución principal del algoritmo del juego de sopa de letras.
+    
+    Configura los parámetros iniciales del juego y llama a la función buscarPalabras.
+    """
     matriz = ["S O L", "U N O", "N U T"]
     palabras = ["SUN", "SOL", "LOT", "ONU", "RAY", "SNT"]
     buscarPalabras(matriz, palabras)
