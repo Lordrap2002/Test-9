@@ -12,6 +12,15 @@ El algoritmo permite al elevador atender un conjunto de pisos en un orden defini
 - Impresión en consola de las iteraciones del elevador.
 - Manejo eficiente de la dirección de desplazamiento.
 
+### Versión 2
+
+- Se ha creado una nueva versión de la aplicación donde la entrada inicial solo incluye el arreglo de pisos y el piso inicial.
+- El usuario puede solicitar el ascensor en cualquier momento de ejecución de la aplicación, teniendo en cuenta la dirección actual del ascensor para manejar la cola de solicitudes.
+
+### Versión 3
+
+- Se ha implementado una versión de la aplicación donde hay 2 elevadores que manejan las solicitudes de pisos de la forma más eficiente, minimizando el recorrido posible.
+
 ## Instalación
 
 Para ejecutar la aplicación, asegúrate de tener Python instalado en tu sistema. Luego, sigue estos pasos:
